@@ -154,3 +154,51 @@ hr {
 .logo img {
   width: 200px;
 }
+
+.game {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.game:nth-child(1) { animation-delay: 0.1s; }
+.game:nth-child(2) { animation-delay: 0.2s; }
+.game:nth-child(3) { animation-delay: 0.3s; }
+.game:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.game:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 25px #00ffcc, 0 0 50px #00ffcc;
+}
+
+.game a {
+  transition: 0.3s;
+}
+
+.game a:hover {
+  background-color: #00ffcc;
+  color: black;
+  padding: 8px 15px;
+  border-radius: 8px;
+}
+
+.logo img {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+#search_game:focus {
+  box-shadow: 0 0 15px #00ffcc, 0 0 30px #00ffcc;
+}
