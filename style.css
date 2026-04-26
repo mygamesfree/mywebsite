@@ -213,3 +213,32 @@ hr {
     max-width: 320px;
   }
 }
+
+.game-page{
+max-width:800px;
+margin:50px auto;
+text-align:center;
+color:white;
+background:rgba(0,0,0,0.75);
+padding:30px;
+border-radius:15px;
+box-shadow:0 0 20px rgba(0,0,0,.5);
+}
+
+.game-page h1,
+.game-page h2,
+.game-page p,
+.game-page li{
+color:white;
+}
+
+.game-page a{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#00ffcc;
+color:black;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+}
