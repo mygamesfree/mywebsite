@@ -18,6 +18,14 @@ body {
   gap: 20px;
 }
 
+.search-box{
+grid-column: span 4;
+display:flex;
+justify-content:center;
+gap:10px;
+position:relative;
+}
+
 
 /* SEARCH BOX */
 .search-box {
